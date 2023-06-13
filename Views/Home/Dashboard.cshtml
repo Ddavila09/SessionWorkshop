@@ -1,0 +1,14 @@
+<div>
+    <h1>Welcome @Context.Session.GetString("PlayerName")!</h1>
+</div>
+
+<div class="container w-75 mx-auto">
+    <p class="text-center display-2">@ViewBag.Value</p>
+    <form class="shadow p-3 rounded text-center" asp-controller="Home" asp-action="DoMath" method="post">
+        <button type="submit" name="operation" value="+"> +1 </button>
+        <button type="submit" name="operation" value="-"> -1 </button>
+        <button type="submit" name="operation" value="x"> x2  </button>
+        <button type="submit" name="operation" value="Random"> Random + </button>
+    </form>
+</div>
+
